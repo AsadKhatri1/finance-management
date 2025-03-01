@@ -1,8 +1,8 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import { GlobalContext } from "../context/GlobalContext";
 
 const Home = () => {
-  const { user, setUser } = useContext(GlobalContext);
+  //   const { user, setUser } = useContext(GlobalContext);
   //   useEffect(() => {
   //     setUser({
   //       ...user,
@@ -13,7 +13,6 @@ const Home = () => {
 
   return (
     <div>
-      {" "}
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </div>
   );

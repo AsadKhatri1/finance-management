@@ -10,13 +10,20 @@ const ProfileCard = () => {
       <div className="w-full md:w-1/2 rounded-md p-5 shadow-md border">
         <h1 className="text-4xl font-bold mb-4 border-b pb-2">Profile</h1>
 
-        <div className="flex flex-col items-center w-1/2 mx-auto ">
-          <img
-            className="w-40 h-40 rounded-full object-cover"
-            src={user?.image}
-            alt="profile"
-          />
+        <div className="flex flex-col md:flex-row items-center w-full justify-between mx-auto border p-4">
+          <div>
+            <img
+              className="w-40 h-40 rounded-full object-cover"
+              src={user?.image}
+              alt="profile"
+            />
+          </div>
+          <div className="mx-2 text-center md:text-left">
+            <h2 className="text-xl font-semibold">Description: </h2>
+            <p>{user?.bio}</p>
+          </div>
         </div>
+
         <div className="w-75 my-5 flex gap-2">
           <div
             className="w-1/2 flex justify-between px-3 text-lg font-semibold shadow-sm
